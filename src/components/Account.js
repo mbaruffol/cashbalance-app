@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { deposit, withdraw, addInterest, applyCharges } from '../store/accountReducers';
 
 // Access the balance from the Redux store
-const Account = () => {
+const account = () => {
     const [depositAmount, setDepositAmount] = useState('');
     const [withdrawalAmount, setWithdrawalAmount] = useState('');
 
@@ -73,4 +73,4 @@ const Account = () => {
     );
 };
 
-export default Account;
+export default account;
